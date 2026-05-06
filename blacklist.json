@@ -1,0 +1,15 @@
+{
+    "addresses": [],
+    "domains": [
+        "bit.ly",
+        "tinyurl.com",
+        "goo.gl"
+    ],
+    "patterns": [
+        "free.*btc",
+        "double.*crypto",
+        "airdrop.*claim",
+        "verify.*wallet",
+        "connect.*wallet.*urgent"
+    ]
+}

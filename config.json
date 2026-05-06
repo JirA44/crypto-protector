@@ -1,0 +1,10 @@
+{
+    "enabled": true,
+    "block_unknown": true,
+    "block_new_addresses": true,
+    "require_confirmation": true,
+    "auto_block_clipboard": true,
+    "monitor_processes": true,
+    "alert_threshold": 0.01,
+    "protection_level": "high"
+}
