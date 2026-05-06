@@ -16,7 +16,7 @@ import pyperclip
 import win32gui
 import win32process
 import psutil
-from tkinter import Tk, messagebox
+import ctypes
 
 class CryptoProtector:
     def __init__(self):
@@ -263,14 +263,10 @@ class CryptoProtector:
                 time.sleep(2)
 
     def show_alert(self, title, message):
-        """Affiche une alerte à l'utilisateur"""
+        """Affiche une alerte à l'utilisateur via Windows MessageBox natif"""
         def show():
-            root = Tk()
-            root.withdraw()
-            messagebox.showwarning(title, message)
-            root.destroy()
+            ctypes.windll.user32.MessageBoxW(0, message, title, 0x30)  # MB_ICONWARNING
 
-        # Afficher dans un thread séparé pour ne pas bloquer
         threading.Thread(target=show, daemon=True).start()
 
     def add_to_whitelist(self, address, note=""):
