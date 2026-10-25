@@ -26,6 +26,23 @@ Pour lancer uniquement le programme en console :
 python main.py
 ```
 
+## English
+
+### What is Crypto Protector for?
+
+Crypto Protector is a local alert tool that watches selected crypto-related content, especially addresses copied to the clipboard, and applies user-configured allow/block lists and detection rules.
+
+### Why use it?
+
+A clipboard check can remind you to inspect a destination address before using it in a wallet and can log alerts for later review. An alert is only a signal: an unknown address is not automatically malicious, and an allow-listed address is not automatically safe.
+
+### Example
+
+Run `python launcher.py`, choose a protection level, add only addresses you have independently verified, then review the alert when you copy a destination. Always compare the complete address and network in your wallet before sending.
+
+This tool does not intercept blockchain transactions or guarantee that an address or website is safe. Heuristic detection can produce false positives and miss new threats.
+
+
 ## Fonctions indiquées par le projet
 
 - surveillance du presse-papiers et détection de motifs configurés ;
